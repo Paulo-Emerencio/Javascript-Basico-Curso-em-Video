@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa em Javascript</title>
+    <style>
+        body {
+            background-color: rgb(26, 155, 194);
+            color: #FFF;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número '))
+        var n2 = Number(window.prompt('Digite outro número '))
+        /*
+        Por padrão, o valor recebido em "window.prompt" é sempre tratado como uma string
+        O comando "Number.parseInt" serve para converter o valor para número inteiro, e "parseFloat" para número real.
+        Utilizando apenas Number, o javascript determina sozinho se é um número inteiro ou real
+        */
+        var soma = n1 + n2
+
+        window.alert('A soma dos dois valores é: ' + String(soma))
+        // String() serve para converter um valor para string.
+
+        window.alert(`A soma de ${n1} e ${n2} é igual a ${soma}`)
+        // Usando template string para fazer a mesma coisa de um jeito mais fácil.
+    </script>
+</body>
+</html>

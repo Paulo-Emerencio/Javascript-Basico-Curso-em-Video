@@ -1,0 +1,36 @@
+body {
+    background-color: cornflowerblue;
+    font: normal 15pt Arial;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .35);
+}
+#titulo {
+    text-align: center;
+}
+#imagem {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+}

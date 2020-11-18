@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        #bloco {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #bloco input {
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <div id="bloco">
+        <h1>Qual país você nasceu?</h1>
+        <input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="Checar Nacionalidade" onclick="nacao()">
+        <div id="resposta">
+
+        </div>
+    </div>
+    
+    <script>
+        function nacao() {
+            var pais = document.getElementById('txtpais').value
+            var res = document.getElementById('resposta')
+
+            if (pais == "Brasil" || pais == "brasil") {
+                res.innerHTML = `<p>Se você nasceu no <strong>${pais}</strong>, então tu é Brasileiro!</p>`
+            } else {
+                res.innerHTML = `<p>Se você nasceu em <strong>${pais}</strong>, então tu é gringo!</p>`
+            }
+        }
+    </script>
+</body>
+</html>

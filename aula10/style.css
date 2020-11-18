@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background-color: aqua;
+    font: normal 20pt Arial;
+}
+
+.bloco {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+#b1 {
+    margin-top: 50px;
+    background-color: blueviolet;
+    border: solid 5px #000;
+    color: #000;
+}
+#b2 {
+    background-color: chartreuse;
+    border: solid 5px #fff;
+    color: #fff;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font:normal 20pt Arial;
+            background: yellowgreen;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja...
+    </div>
+
+    <script>
+        var interagindo = document.getElementById('area')
+        interagindo.addEventListener('click', clicar)
+        interagindo.addEventListener('mouseover', entrar)
+        interagindo.addEventListener('mouseout', sair)
+        /*
+        Você pode usar o addEventListener dentro do Javascript
+        Ou o 'onmouseclick', 'onmouseover' e etc. no HTML.
+        Vai da sua preferência.
+        */
+
+        function clicar() {
+            interagindo.innerText = 'Clicou!'
+            interagindo.style.color = 'purple'
+            interagindo.style.backgroundColor = 'orange'
+        }
+        function entrar() {
+            interagindo.innerText = 'Qq c vai fazê?'
+            interagindo.style.color = 'yellow'
+            interagindo.style.backgroundColor = 'blue'
+        }
+        function sair() {
+            interagindo.innerText = 'Interaja...'
+            interagindo.style.color = 'white'
+            interagindo.style.backgroundColor = 'yellowgreen'
+        }
+    </script>
+</body>
+</html>
